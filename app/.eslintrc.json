@@ -24,7 +24,7 @@
     "indent": ["error", 2],
     "quotes": ["error", "single"],
     "semi": ["error", "always"],
-    "prettier/prettier": "error"
+    "prettier/prettier": ["error", { "endOfLine": "auto" }]
   },
   "settings": {
     "react": {
