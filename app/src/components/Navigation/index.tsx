@@ -5,7 +5,7 @@ export default function Navigation() {
 
   return (
     <nav>
-      <ul className="gap-4 hidden lg:flex">
+      <ul className="hidden sm:gap-4 md:flex">
         {options.map((option, i) => (
           <motion.li
             initial={{ y: -100 }}
