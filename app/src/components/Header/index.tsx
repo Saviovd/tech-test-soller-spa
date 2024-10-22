@@ -37,7 +37,8 @@ export default function Header() {
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 0.6, delay: 0.4 }}
-        className="md:absolute right-0 top-0 -z-10 w-4/5 md:w-1/2 xl:w-1/3"
+        className="right-0 top-0 -z-10 w-4/5 object-contain object-right-top md:w-2/5 lg:w-96 md:absolute xl:w-2/5"
+        style={{ maxHeight: '694px' }}
         alt="man screwing solar panel"
         src={'/assets/backgrounds/man-working.png'}
         width={820}

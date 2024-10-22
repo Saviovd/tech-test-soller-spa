@@ -1,5 +1,6 @@
 import CallToAction from '@/components/CallToAction';
 import Header from '@/components/Header';
+import PickTheSun from '@/components/PickTheSun';
 import { Roboto } from 'next/font/google';
 
 const roboto = Roboto({
@@ -14,6 +15,7 @@ export default function Home() {
       <Header />
       <main className="pt-12 px-4 xl:px-20">
         <CallToAction />
+        <PickTheSun />
       </main>
     </div>
   );
