@@ -24,4 +24,47 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
+  .w-full2 {
+    width: 200%;
+    max-height: 1000px;
+  }
+
+  .w-48 {
+    width: 48%;
+  }
+
+  .left-svg {
+    position: absolute;
+    width: 180%;
+    left: -90%;
+    max-width: none;
+    margin-top: 20px;
+  }
+
+  @media screen and (min-width: 540px) {
+    .left-svg {
+      width: 100%;
+      left: -50%;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .left {
+      text-align: left;
+    }
+
+    .right {
+      text-align: right;
+    }
+
+    .left-svg {
+      width: 60%;
+      left: -30%;
+      height: 100%;
+      object-fit: contain;
+      top: 0;
+      margin: 0;
+    }
+  }
 }

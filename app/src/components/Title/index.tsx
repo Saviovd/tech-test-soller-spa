@@ -1,13 +1,15 @@
 interface ITitleProps {
   title: string;
   subtitle: string;
-  theme: 'dark' | 'light';
+  theme?: 'dark' | 'light';
+  align?: 'center' | 'left' | 'right';
 }
-export default function Title({ title, subtitle, theme = 'light' }: ITitleProps) {
+
+export default function Title({ title, subtitle, theme = 'light', align = 'center' }: ITitleProps) {
   return (
-    <div className="flex-col text-center">
+    <div className={`flex-col text-center ${align !== 'center' ? align : 'text-center'}`}>
       <span
-        className={`font-medium text-base lg:text-xl  ${theme === 'light' ? 'text-amber-600' : 'text-amber-300'}`}
+        className={`font-medium text-base lg:text-xl ${theme === 'light' ? 'text-amber-600' : 'text-amber-300'}`}
       >
         {subtitle}
       </span>

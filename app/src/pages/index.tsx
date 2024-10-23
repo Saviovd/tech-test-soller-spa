@@ -1,5 +1,6 @@
 import CallToAction from '@/components/CallToAction';
 import Header from '@/components/Header';
+import PersonalizedServices from '@/components/PersonalizedServices';
 import PickTheSun from '@/components/PickTheSun';
 import { Roboto } from 'next/font/google';
 
@@ -16,6 +17,7 @@ export default function Home() {
       <main className="pt-12 px-4 xl:px-20">
         <CallToAction />
         <PickTheSun />
+        <PersonalizedServices />
       </main>
     </div>
   );
