@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 export const PersonalizedServicesStyle = styled.div`
+  padding-bottom: 550px;
+
   &::after {
     content: '';
     background-image: url('/assets/backgrounds/left.png');
@@ -19,6 +21,9 @@ export const PersonalizedServicesStyle = styled.div`
     }
   }
 
+  @media (min-width: 1024px) {
+    padding-bottom: 0;
+  }
   @media (min-width: 1620px) {
     height: 100vh;
     padding-left: 2rem;

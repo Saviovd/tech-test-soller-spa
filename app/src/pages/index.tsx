@@ -1,5 +1,6 @@
 import CallToAction from '@/components/CallToAction';
 import Header from '@/components/Header';
+import MakeSomethingAwesome from '@/components/MakeSomethingAwesome';
 import PersonalizedServices from '@/components/PersonalizedServices';
 import PickTheSun from '@/components/PickTheSun';
 import PowerfulFeatures from '@/components/PowerfulFeatures';
@@ -15,11 +16,12 @@ export default function Home() {
   return (
     <div className={roboto.className}>
       <Header />
-      <main className="pt-12 px-4 xl:px-20">
+      <main className="pt-12">
         <CallToAction />
         <PickTheSun />
         <PersonalizedServices />
         <PowerfulFeatures />
+        <MakeSomethingAwesome />
       </main>
     </div>
   );

@@ -4,7 +4,7 @@ import { PowerfulFeaturesStyle } from './styles';
 
 export default function PowerfulFeatures() {
   return (
-    <PowerfulFeaturesStyle className="pt-12 lg:py-0 lg:flex lg:flex-row lg:relative">
+    <PowerfulFeaturesStyle className="pt-12 lg:py-0 lg:flex lg:flex-row lg:relative px-4 xl:px-20">
       <div className="flex flex-col h-auto gap-12 w-full lg:mt-0 lg:min-h-full lg:justify-center lg:w-4/6">
         <div className="flex flex-col gap-6">
           <Title title="Powerful features" subtitle="System features" align="left" />

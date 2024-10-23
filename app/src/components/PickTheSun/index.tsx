@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function PickTheSun() {
   return (
-    <div className="py-12 flex flex-col gap-16 lg:py-20 lg:gap-20">
+    <div className="py-12 flex flex-col gap-16 lg:py-20 lg:gap-20 px-4 xl:px-20">
       <div className="flex flex-col gap-6">
         <Title subtitle="No more waste" title="Pick the Sun" theme="light" />
         <p className="text-center text-base font-normal max-w-4xl m-auto lg:text-xl">

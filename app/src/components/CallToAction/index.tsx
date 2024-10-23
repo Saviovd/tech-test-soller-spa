@@ -3,7 +3,7 @@ import TestimonyHorizontalCard from '../TestimonyHorizontalCard';
 
 export default function CallToAction() {
   return (
-    <div className="flex flex-col gap-16 md:items-start xl:gap-32">
+    <div className="flex flex-col gap-16 md:items-start xl:gap-32 px-4 xl:px-20">
       <div className="flex flex-col gap-3 items-center md:items-start">
         <h2 className="text-4xl font-bold text-center md:text-left xl:text-7xl">
           Get the Sun to

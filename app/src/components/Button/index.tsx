@@ -5,9 +5,10 @@ interface IButtonProps {
   content: string;
   url: string;
   type?: 1 | 2;
+  classname?: string;
 }
 
-export default function Button({ content, url, type = 1 }: IButtonProps) {
+export default function Button({ content, url, type = 1, classname }: IButtonProps) {
   return (
     <>
       <Link
@@ -16,7 +17,7 @@ export default function Button({ content, url, type = 1 }: IButtonProps) {
           type === 1
             ? 'border-2 border-purple-900 text-purple-900 fill-purple-900 hover:bg-purple-900 hover:text-amber-300 hover:fill-amber-300'
             : 'border-2 border-amber-300 text-amber-300 fill-amber-300 hover:bg-amber-300 hover:text-amber-900 hover:fill-amber-900'
-        }`}
+        } ${classname}`}
       >
         <span className="px-3">{content}</span>
         <ArrowRight />

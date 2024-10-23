@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const PowerfulFeaturesStyle = styled.div`
-  margin-top: 450px;
+  padding-bottom: 550px;
 
   &::after {
     content: '';
@@ -23,6 +23,7 @@ export const PowerfulFeaturesStyle = styled.div`
 
   @media (min-width: 1024px) {
     margin-top: 160px;
+    padding-bottom: 0;
   }
   @media (min-width: 1620px) {
     height: 100vh;
