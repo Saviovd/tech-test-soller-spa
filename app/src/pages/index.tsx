@@ -2,6 +2,7 @@ import CallToAction from '@/components/CallToAction';
 import Header from '@/components/Header';
 import PersonalizedServices from '@/components/PersonalizedServices';
 import PickTheSun from '@/components/PickTheSun';
+import PowerfulFeatures from '@/components/PowerfulFeatures';
 import { Roboto } from 'next/font/google';
 
 const roboto = Roboto({
@@ -18,6 +19,7 @@ export default function Home() {
         <CallToAction />
         <PickTheSun />
         <PersonalizedServices />
+        <PowerfulFeatures />
       </main>
     </div>
   );
