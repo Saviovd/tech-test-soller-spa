@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 
 export const PowerfulFeaturesStyle = styled.div`
+  position: relative;
   padding-bottom: 550px;
+  overflow: hidden;
 
   &::after {
     content: '';
