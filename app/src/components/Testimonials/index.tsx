@@ -3,11 +3,11 @@ import { Navigation } from 'swiper/modules';
 
 import data from '@/data/testimonials.json';
 import { TestimonialsStyles } from './styles';
-import ArrowRight from '../../../public/assets/icons/ArrowRight';
+import ArrowRight from '@/assets/ArrowRight';
+import TestimonialCard from '@/components/TestimonialCard';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
-import TestimonialCard from '../TestimonialCard';
 
 export default function Testimonials() {
   return (

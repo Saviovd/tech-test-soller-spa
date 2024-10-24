@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import ArrowRight from '../../../public/assets/icons/ArrowRight';
+import ArrowRight from '@/assets/ArrowRight';
 
 interface IButtonProps {
   content: string;

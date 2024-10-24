@@ -1,4 +1,5 @@
 import CallToAction from '@/components/CallToAction';
+import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import MakeSomethingAwesome from '@/components/MakeSomethingAwesome';
 import NowAvaiable from '@/components/NowAvaiable';
@@ -25,6 +26,7 @@ export default function Home() {
         <MakeSomethingAwesome />
         <NowAvaiable />
       </main>
+      <Footer />
     </div>
   );
 }
