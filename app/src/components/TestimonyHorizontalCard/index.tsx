@@ -1,5 +1,5 @@
 import Image from 'next/image';
-
+import { motion } from 'framer-motion';
 interface ITestimonyHorizontalCard {
   testimony: string;
   avatar: string;
@@ -14,7 +14,12 @@ export default function TestimonyHorizontalCard({
   email,
 }: ITestimonyHorizontalCard) {
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.3, delay: 0.3 }}
+    >
       <p className="mb-4 max-w-xl">“{testimony}”</p>
       <div className="flex">
         <Image
@@ -33,6 +38,6 @@ export default function TestimonyHorizontalCard({
           <span className="text-slate-600 text-base">{email}</span>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
