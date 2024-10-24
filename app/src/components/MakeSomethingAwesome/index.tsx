@@ -1,5 +1,6 @@
 import Title from '@/components/Title';
 import Button from '@/components/Button';
+import Testimonials from '@/components/Testimonials';
 
 export default function MakeSomethingAwesome() {
   return (
@@ -17,7 +18,7 @@ export default function MakeSomethingAwesome() {
         </p>
       </div>
       <Button content="Request a Quote" url="/" type={2} classname=" text-nowrap" />
-      <div className="w-full ">testimonials</div>
+      <Testimonials />
     </div>
   );
 }
