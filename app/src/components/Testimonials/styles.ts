@@ -14,6 +14,7 @@ export const TestimonialsStyles = styled.div`
 
     .swiper-wrapper {
       align-items: center;
+      justify-content: flex-start;
     }
 
     .swiper-slide {

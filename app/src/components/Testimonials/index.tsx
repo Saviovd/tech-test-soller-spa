@@ -37,7 +37,7 @@ export default function Testimonials() {
         className="swiper"
       >
         {data.map((testimonial, i) => (
-          <SwiperSlide key={i}>
+          <SwiperSlide key={i} className="min-w-80">
             <TestimonialCard
               consumption={testimonial.consumption}
               name={testimonial.name}
