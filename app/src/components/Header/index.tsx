@@ -8,7 +8,7 @@ import Navigation from '@/components/Navigation';
 export default function Header() {
   const AnimatedImage = motion.create(Image);
   return (
-    <header className="h-full flex items-start justify-between md:items-center md:p-4 xl:px-20 xl:py-6">
+    <header className="h-full flex items-start justify-between md:items-center md:p-4 xl:px-20 xl:py-6 overflow-x-hidden">
       <div className="left flex items-center">
         <motion.h1
           initial={{ opacity: 0 }}

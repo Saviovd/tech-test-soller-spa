@@ -14,7 +14,7 @@ export default function Title({ title, subtitle, theme = 'light', align = 'cente
         {subtitle}
       </span>
       <h2
-        className={`font-bold text-4xl lg:text-6xl lg:font-extrabold ${theme === 'light' ? 'text-slate-900' : 'text-slate-50'}`}
+        className={`font-bold text-3xl lg:text-6xl lg:font-extrabold ${theme === 'light' ? 'text-slate-900' : 'text-slate-50'}`}
       >
         {title}
       </h2>

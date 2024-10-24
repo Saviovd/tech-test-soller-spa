@@ -1,6 +1,7 @@
 import CallToAction from '@/components/CallToAction';
 import Header from '@/components/Header';
 import MakeSomethingAwesome from '@/components/MakeSomethingAwesome';
+import NowAvaiable from '@/components/NowAvaiable';
 import PersonalizedServices from '@/components/PersonalizedServices';
 import PickTheSun from '@/components/PickTheSun';
 import PowerfulFeatures from '@/components/PowerfulFeatures';
@@ -22,6 +23,7 @@ export default function Home() {
         <PersonalizedServices />
         <PowerfulFeatures />
         <MakeSomethingAwesome />
+        <NowAvaiable />
       </main>
     </div>
   );
