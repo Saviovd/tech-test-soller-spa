@@ -16,9 +16,9 @@ export const PersonalizedServicesStyle = styled.div`
     z-index: -1;
 
     @media (min-width: 1620px) {
-      width: 1146px;
-      height: 1000px;
-      left: -650px;
+      width: 850px;
+      height: 800px;
+      left: -450px;
     }
   }
 
@@ -26,7 +26,7 @@ export const PersonalizedServicesStyle = styled.div`
     padding-bottom: 0;
   }
   @media (min-width: 1620px) {
-    height: 100vh;
+    height: 90vh;
     padding-left: 2rem;
   }
   @media (min-width: 2090px) {

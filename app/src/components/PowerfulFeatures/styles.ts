@@ -18,18 +18,18 @@ export const PowerfulFeaturesStyle = styled.div`
     z-index: -1;
 
     @media (min-width: 1620px) {
-      width: 1146px;
-      height: 1000px;
-      right: -650px;
+      width: 850px;
+      height: 800px;
+      right: -450px;
     }
   }
 
   @media (min-width: 1024px) {
     margin-top: 160px;
-    padding-bottom: 0;
+    padding-bottom: 38px;
   }
   @media (min-width: 1620px) {
-    height: 100vh;
+    height: 90vh;
     margin-top: 0;
   }
   @media (min-width: 2090px) {

@@ -5,7 +5,7 @@ import { PersonalizedServicesStyle } from './styles';
 export default function PersonalizedServices() {
   return (
     <PersonalizedServicesStyle className="py-20 lg:py-0 lg:flex lg:flex-row-reverse px-4 xl:px-20">
-      <div className="flex flex-col h-auto gap-12 w-full lg:mt-0 lg:min-h-full lg:justify-center lg:w-4/6 relative">
+      <div className="flex flex-col h-auto gap-12 w-full lg:mt-0 lg:min-h-full lg:justify-center lg:w-4/6 xl:w-3/4 relative">
         <div className="flex flex-col gap-6">
           <Title title="Personalized services" subtitle="Services" align="left" />
 
