@@ -6,7 +6,7 @@ export default function Document() {
     <Html lang="en">
       <Head />
       <StyledComponentsRegistry>
-        <body className="antialiased">
+        <body className="antialiased overflow-x-hidden">
           <Main />
           <NextScript />
         </body>

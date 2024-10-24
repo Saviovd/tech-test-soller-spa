@@ -13,6 +13,7 @@ export const PersonalizedServicesStyle = styled.div`
     width: 600px;
     position: absolute;
     left: -300px;
+    z-index: -1;
 
     @media (min-width: 1620px) {
       width: 1146px;

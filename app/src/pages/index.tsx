@@ -14,7 +14,7 @@ const roboto = Roboto({
 
 export default function Home() {
   return (
-    <div className={`${roboto.className} overflow-x-hidden`}>
+    <div className={`${roboto.className}`}>
       <Header />
       <main className="pt-12">
         <CallToAction />
