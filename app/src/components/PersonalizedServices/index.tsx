@@ -38,9 +38,9 @@ export default function PersonalizedServices() {
     >
       <div className="flex flex-col h-auto gap-12 w-full lg:mt-0 lg:min-h-full lg:justify-center lg:w-4/6 xl:w-3/4 relative">
         <motion.div
-          initial={{ y: 300, opacity: 0 }}
+          initial={{ y: 400, opacity: 0 }}
           animate={isInView ? { y: 0, opacity: 1 } : {}}
-          transition={{ duration: 0.4, delay: 0.3 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
           className="flex flex-col gap-6"
         >
           <Title title="Personalized services" subtitle="Services" align="left" />
@@ -50,12 +50,12 @@ export default function PersonalizedServices() {
           </p>
         </motion.div>
 
-        <div className="flex gap-y-12 flex-wrap justify-between lg:justify-start lg:gap-5 xl:gap-7 custom-1620:gap-5">
+        <div className="flex gap-y-12 flex-wrap justify-between lg:justify-start lg:gap-5 xl:gap-7 custom-1620:gap-5 max-w-screen-lg">
           {isInView &&
             services.map((service, i) => (
               <ServiceCard
                 key={i}
-                index={i}
+                index={i + 1}
                 title={service.title}
                 description={service.description}
               />

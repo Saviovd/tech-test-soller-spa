@@ -8,7 +8,7 @@ export default function CallToAction() {
       initial={{ x: -800 }}
       animate={{ x: 0 }}
       exit={{ x: -800 }}
-      transition={{ duration: 0.3, delay: 0.1 }}
+      transition={{ duration: 0.5, delay: 0.5 }}
       className="flex flex-col gap-16 md:items-start xl:gap-32 px-4 xl:px-20"
     >
       <div className="flex flex-col gap-3 items-center md:items-start">

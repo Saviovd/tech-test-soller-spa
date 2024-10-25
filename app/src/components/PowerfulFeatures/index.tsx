@@ -38,9 +38,9 @@ export default function PowerfulFeatures() {
     >
       <div className="flex flex-col h-auto gap-12 w-full lg:mt-0 lg:min-h-full lg:justify-center lg:w-4/6">
         <motion.div
-          initial={{ y: 300, opacity: 0 }}
+          initial={{ y: 400, opacity: 0 }}
           animate={isInView ? { y: 0, opacity: 1 } : {}}
-          transition={{ duration: 0.4, delay: 0.3 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
           className="flex flex-col gap-6"
         >
           <Title title="Powerful features" subtitle="System features" align="left" />
@@ -58,7 +58,7 @@ export default function PowerfulFeatures() {
                 key={i}
                 title={feature.title}
                 description={feature.description}
-                index={i}
+                index={i + 1}
               />
             ))}
         </div>

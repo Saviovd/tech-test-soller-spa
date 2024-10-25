@@ -9,10 +9,10 @@ interface IServiceCard {
 export default function ServiceCard({ title, description, icon, index = 0 }: IServiceCard) {
   return (
     <motion.div
-      initial={{ y: 300, opacity: 0 }}
+      initial={{ y: 500, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      exit={{ y: 300 }}
-      transition={{ duration: 0.4, delay: 0.2 * index }}
+      exit={{ y: 500 }}
+      transition={{ duration: 0.2, delay: 0.2 * index }}
       className="w-48 text-center max-w-lg lg:max-w-xl"
     >
       {icon && icon}

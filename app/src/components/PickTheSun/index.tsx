@@ -8,12 +8,12 @@ export default function PickTheSun() {
   const isInView = useInView(pictureRef, { once: true, amount: 0.3 });
 
   return (
-    <div className="py-12 flex flex-col gap-16 lg:py-20 lg:gap-20 px-4 xl:px-20 overflow-x-hidden">
+    <div className="pt-12 flex flex-col gap-16 lg:py-20 lg:gap-20 px-4 xl:px-20 overflow-x-hidden">
       <motion.div
         initial={{ y: 300 }}
         animate={{ y: 0 }}
         exit={{ y: 300 }}
-        transition={{ duration: 0.4, delay: 0.3 }}
+        transition={{ duration: 0.4, delay: 0.7 }}
         className="flex flex-col gap-6"
       >
         <Title subtitle="No more waste" title="Pick the Sun" theme="light" />
@@ -26,10 +26,10 @@ export default function PickTheSun() {
 
       <motion.picture
         ref={pictureRef}
-        initial={{ y: 300, opacity: 0 }}
-        animate={isInView ? { y: 0, opacity: 1 } : {}}
-        exit={{ y: 300 }}
-        transition={{ duration: 0.3, delay: 0.1 }}
+        initial={{ opacity: 0 }}
+        animate={isInView ? { opacity: 1 } : {}}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.4, delay: 0.2 }}
         className="relative -right-4 sm:w-3/4 md:w-full md:max-w-7xl custom-430:right-0 custom-430:m-auto"
       >
         <source media="(min-width: 430px)" srcSet="/assets/backgrounds/desktop.png" />
