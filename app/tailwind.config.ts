@@ -25,9 +25,6 @@ const config: Config = {
       },
     },
   },
-  compiler: {
-    styledComponents: true,
-  },
   plugins: [],
 };
 export default config;

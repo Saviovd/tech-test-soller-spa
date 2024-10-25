@@ -1,3 +1,4 @@
+import React, { forwardRef } from 'react';
 import Image from 'next/image';
 
 interface ITestimonialCard {
@@ -8,15 +9,12 @@ interface ITestimonialCard {
   avatar: string;
 }
 
-export default function TestimonialCard({
-  testimonial,
-  name,
-  last,
-  avatar,
-  consumption,
-}: ITestimonialCard) {
+const TestimonialCard = forwardRef<HTMLDivElement, ITestimonialCard>(function TestimonialCard(
+  { testimonial, name, last, avatar, consumption },
+  ref
+) {
   return (
-    <div className="card bg-gray-50 w-full p-8 rounded-lg flex flex-col justify-center">
+    <div ref={ref} className="card bg-gray-50 w-full p-8 rounded-lg flex flex-col justify-center">
       <p className="font-base font-normal text-base py-4 lg:text-lg">{testimonial}</p>
       <div className="flex">
         <Image
@@ -39,4 +37,6 @@ export default function TestimonialCard({
       </div>
     </div>
   );
-}
+});
+
+export default TestimonialCard;
