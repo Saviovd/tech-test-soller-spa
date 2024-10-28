@@ -37,7 +37,11 @@ To get started with the project, follow these steps:
     ```bash
     cd tech-test-soller-spa
     ```
-3. Install dependencies:
+3. Navigate into the app folder:
+    ```bash
+    cd .\app\
+    ```
+4. Install dependencies:
     ```bash
     npm install
     ```
